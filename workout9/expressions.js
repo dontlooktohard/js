@@ -1,12 +1,12 @@
-const percentageOfWorld1 = (a) => {
-    const  population = 7900000000;
-    const  countries =[
-        'china'=(1441-'million'),
-        'spain'=(47-'million'),
-        'brazil'=(214-'million')]
-    const country = countries[countriesIndex];
-    const  percentage = country/7900000000 * 100;
-    console.log('${country} is ${percentage} of the world population.');
-
-    
+function percentageOfWorld1(population) {
+   
+    return (population / 7900) * 100;
 }
+
+
+let chinaPop = 1441000000;
+let indiaPop = 1339000000;
+let usPop = 331002651;
+console.log(percentageOfWorld1(chinaPop) + '%');  
+console.log(percentageOfWorld1(indiaPop) + '%');  
+console.log(percentageOfWorld1(usPop) + '%'); 

@@ -1,18 +1,18 @@
 function languageIndicator(language){
     switch(language){
-        case 1: 
+        case 'mandarin': 
         console.log("MOST number of native speakers!")
         break;
-        case 2: 
+        case 'Spanish': 
         console.log('2nd place in a number of native speakers')
         break;
-        case 3: 
+        case 'English': 
         console.log('3rd place')
         break;
-        case 4: 
+        case 'Hindi': 
         console.log('Number 4')
         break;
-        case 5: 
+        case 'Arabic': 
         console.log('5th most spoken language')
         break;
 

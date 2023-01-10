@@ -1,8 +1,8 @@
-function countryToLiveIn(language, isIsland, population, country){
-    if (language === 'English' && !isIsland && population<50 && country){
-        console.log(`${country} this is the  country for you`)
-    }
-    else {
-        console.log(' this is not  a country for you')
+
+function countryToLiveIn(language, isIsland, population, country) {
+    if (language === 'English' && !isIsland && population < 50000000) {
+        console.log(`You should live in ${country}.`);
+    } else {
+        console.log(`${country} does not meet your criteria.`);
     }
 }

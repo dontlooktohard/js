@@ -16,5 +16,5 @@ function getColor(color){
     }
 }
 
-const color = 'yellow'
+const color = 'green'
 getColor(color);

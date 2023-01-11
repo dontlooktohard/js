@@ -9,5 +9,4 @@
 
 const noDuplicates = (numbers) =>
  numbers.filter((val,index) => numbers.indexOf(val) === index);
-
 console.log(noDuplicates([3, 4, 4, 3, 6, 3]));

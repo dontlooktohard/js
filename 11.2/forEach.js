@@ -77,7 +77,6 @@ console.log(obj);
 
 // 5. Write a function capitalize that takes a string as an
 // argument and will return the whole string capitalized.
-const str10 = 'i have learned something new today';
 function capitalizer(string) {
   const letters = [];
   [...string].forEach((letter) => {
@@ -85,6 +84,33 @@ function capitalizer(string) {
   });
   return letters.join("");
 }
+console.log(capitalizer("hello world"));
 
-console.log(capitalize(hello world));
-// 6. Write a function reverse that takes a string as an
+// 6. Write a function called shiftLetters that takes a string as an argument and return’s an encoded string with each letter
+// shifted down the alphabet by one.
+function shiftLetters(string) {
+  let encoded = "";
+  [...string].forEach((letter) => {
+    let charCode = letter.charCodeAt(letter[0]) - 1;
+    encoded += String.fromCharCode(charCode);
+  });
+  return encoded;
+}
+console.log(shiftLetters("bcd"))
+//7. Create a function called swapCase that takes a string as
+// an argument and returns a string that every other word is
+// capitalized. (you can use the fifth’s exercise's function to
+// keep it dry)
+function swapCase(string) {
+  let splitted = string.split(" ");
+  let capitalizedEveryOther = [];
+  splitted.forEach((word, index) => {
+    if (index % 2 === 0) {
+      capitalizedEveryOther.push(capitalizer(word));
+    } else {
+      capitalizedEveryOther.push(word);
+    }
+  });
+  return capitalizedEveryOther.join(" ");
+}
+console.log(swapCase("hi there how are you?"));

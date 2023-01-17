@@ -36,3 +36,6 @@ const newReleases = [
   newReleases.forEach(function(movies){
     console.log(movies.title,movies.id);
   })
+  newReleases.map(function(movies){
+    console.log(movies.title,movies.id);
+  })

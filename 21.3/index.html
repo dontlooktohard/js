@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <p>Why are you interested in this position?</p>
+        <textarea name="" id="text" cols="30" rows="10"></textarea><br>
+        <button>Click here!</button>
+    </body>
+    <script>
+        const text = document.getElementById(`text`)
+        const btn = document.querySelector(`button`)
+        btn.addEventListener(`click`, function() {
+            if (text.value.length < 100) {
+                alert(`at least 100 character needs!`)
+            }
+        })
+    </script>
+</body>
+</html>

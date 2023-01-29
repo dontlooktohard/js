@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size</title>
+    <script>
+        function changeSize(size) {
+          let text = document.querySelector("#text");
+          let currentSize = parseInt(text.style.fontSize);
+          currentSize = currentSize ? currentSize : 16;
+          currentSize += size;
+          if (currentSize >= 6 && currentSize <= 100) {
+            text.style.fontSize = currentSize + "px";
+          }
+        }
+      </script>
+</head>
+<body>
+    <div id="text">
+        Some text (:
+      </div>
+      <button onclick="changeSize(2)">+</button>
+      <button onclick="changeSize(-2)">-</button>
+</body>
+</html>

@@ -1,6 +1,6 @@
 const input = document.querySelector("input")
 
-function addingsmile() {
+function addingSmile() {
 
     for (let i = 0; i < input.value; i++) {
         let creating = document.createElement('img')

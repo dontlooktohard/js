@@ -24,7 +24,7 @@ const hero = {
 
 
 
-
+//  using the apply way
     const hero2 = {
         health: 5,
         power: 68,

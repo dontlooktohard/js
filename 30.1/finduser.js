@@ -1,10 +1,11 @@
 const input = document.querySelector("#textHold");
 const submitBtn = document.querySelector("#btn");
-const userCard = document.querySelector("#user-card");
+const userCard = document.querySelector("#cardsBox")
 
 async function getUserInfo(username) {
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
+  console.log(username);
   return data;
 }
 
@@ -14,8 +15,8 @@ submitBtn.addEventListener("click", async function() {
   console.log(username);
   try {
     const user = await getUserInfo(username);
-    userCard.textContent = `
-      <div class="card">
+    userCard.innerHTML += `
+      <div class="cardBox">
         <img src="${user.avatar_url}" alt="Avatar">
         <h2>${user.name}</h2>
         <p>Public Repos: ${user.public_repos}</p>
@@ -23,7 +24,7 @@ submitBtn.addEventListener("click", async function() {
       </div>
     `;
   } catch (error) {
-    console.log('error');
+    console.log(error);
   }
 });
 
